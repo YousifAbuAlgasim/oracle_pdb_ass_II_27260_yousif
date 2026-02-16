@@ -1,23 +1,7 @@
 # oracle_pdb_ass_II_27260_yousif
 # Oracle Pluggable Database Assignment II
 
-## Student Information
-Name: Yousif  
-Student ID: 27260  
-Course: Database Development with PL/SQL (INSY 8311)
 
----
-
-**Overview**
-This assignment focuses on Oracle Multitenant Architecture and management of Pluggable Databases (PDBs).
-
----
-
-**Oracle Environment**
-- Oracle Database: XE 21c
-- Tools: SQL Developer, SQL*Plus, OEM
-
----
 
 **Task 1: Main PDB Creation**
 **- Created PDB: yo_pdb_27260**
@@ -46,16 +30,13 @@ This assignment focuses on Oracle Multitenant Architecture and management of Plu
 
 
 **Task 3: Oracle Enterprise Manager**
-**OEM accessed successfully Database dashboard verified**
+
+**-OEM accessed successfully Database dashboard verified**
 <img width="1905" height="947" alt="image" src="https://github.com/user-attachments/assets/16c1413d-68a7-4dba-94c0-b860a954910e" />
 
 
 
- **Integrity Statement**
-I declare that this assignment is my own work and I did not copy from any other student.
-
-
 **Submission Info**
-Repository Link: (paste here after submit)  
+Repository Link: https://github.com/YousifAbuAlgasim/oracle_pdb_ass_II_27260_yousif  
 PDB Name Created: yo_pdb_27260  
 Issues Encountered: No
