@@ -1,43 +1,57 @@
 # oracle_pdb_ass_II_27260_yousif
 # Oracle Pluggable Database Assignment II
+**Student Information**
+Name: Yousif  
+Student ID: 27260  
+
+## Overview
+
+This assignment focuses on understanding and applying Oracle Multitenant architecture through practical exercises. The main objective was to create and manage Pluggable Databases (PDBs), configure user accounts, and monitor the database environment using Oracle Enterprise Manager.
+
+The tasks included creating a main PDB, managing a temporary PDB, accessing OEM, and documenting all activities using GitHub. This assignment helped improve my practical skills in Oracle database administration and system management.
 
 
 
-**Task 1: Main PDB Creation**
+ **Task 1: Main PDB Creation**
+The main Pluggable Database `yo_pdb_27260` was created using SQL*Plus from the CDB root container. The database files were generated using the FILE_NAME_CONVERT parameter. After creation, the PDB was opened successfully and its state was saved.
 
-**- Created PDB: yo_pdb_27260**
-<img width="972" height="246" alt="sqla1" src="https://github.com/user-attachments/assets/055dd07a-98fc-45fd-a2f3-40f3f8e09352" />
+The session was switched to the new PDB and verified using the SYS_CONTEXT function. A user named `yousif_plsqlauca_27260` was created and granted CONNECT and RESOURCE privileges.
 
-**PDB opened and saved state**
-<img width="818" height="256" alt="Screenshot 2026-02-16 235915" src="https://github.com/user-attachments/assets/17eab611-843d-44bb-b8c2-0c199c39dee5" />
-
-**Enter PDB and Create User & Grant Connect**
-<img width="886" height="141" alt="sqla5" src="https://github.com/user-attachments/assets/e36da023-b2ed-4ffc-9871-ecfcf5c455c9" />
-
-
- **Task 2: Temporary PDB** 
- 
-**- Created: yo_to_delete_pdb_27260**
-<img width="910" height="258" alt="sqlat1" src="https://github.com/user-attachments/assets/dfbf84aa-56ff-46e6-9b5f-ef6f97751423" />
+The open status of the PDB was verified using the V$PDBS system view.
 
 
 
- **Verified existence**
-  <img width="923" height="808" alt="sqlat2,3" src="https://github.com/user-attachments/assets/9198ea8f-89f9-42e9-b8f3-2464b22a6af3" />
+ **Task 2: Temporary PDB Creation and Deletion**
+A temporary Pluggable Database named `yo_to_delete_pdb_27260` was created for testing purposes. The database was opened and verified using a query on the V$PDBS view.
 
- **Deleted and it's no longer exists successfully**
-<img width="927" height="583" alt="sqlat5,6,7" src="https://github.com/user-attachments/assets/c7ce3348-d813-4144-a242-debddc86eddd" />
-
-
-
-**Task 3: Oracle Enterprise Manager**
-
-**-OEM accessed successfully Database dashboard verified**
-<img width="1905" height="947" alt="image" src="https://github.com/user-attachments/assets/16c1413d-68a7-4dba-94c0-b860a954910e" />
+After verification, the PDB was closed immediately and dropped using the INCLUDING DATAFILES option. A final verification was done to confirm that the PDB was removed successfully.
 
 
 
-**Submission Info**
-Repository Link: https://github.com/YousifAbuAlgasim/oracle_pdb_ass_II_27260_yousif  
-PDB Name Created: yo_pdb_27260  
-Issues Encountered: No
+**Task 3: Oracle Enterprise Manager (OEM)**
+Oracle Enterprise Manager Express was accessed through a web browser. The database dashboard displayed the Oracle XE environment, version information, and the number of Pluggable Databases. This confirmed that the created PDB was running correctly.
+
+The dashboard also showed system status and performance information.
+
+**Challenges Faced**
+During the assignment, some issues were faced when switching between containers and configuring user access in OEM. These issues were solved by using SYSDBA privileges and carefully following Oracle Multitenant commands.
+
+---
+
+
+## Assignment Submission Checklist
+
+✔ Main PDB created successfully (`yo_pdb_27260`)  
+✔ Main PDB opened and state saved  
+✔ User `yousif_plsqlauca_27260` created inside the PDB  
+✔ Temporary PDB `yo_to_delete_pdb_27260` created  
+✔ Temporary PDB verified using V$PDBS  
+✔ Temporary PDB closed and deleted  
+✔ Deletion confirmed using system query  
+✔ Oracle Enterprise Manager (OEM) accessed successfully  
+✔ OEM dashboard screenshot included  
+✔ All screenshots uploaded inside the `screenshots` folder  
+✔ GitHub repository set to PUBLIC  
+✔ README file completed and organized  
+✔ Submission link prepared for Google Form 
+
